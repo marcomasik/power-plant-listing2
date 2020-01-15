@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { List } from './components/List.js';
 
+import './App.css';
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -27,16 +29,6 @@ class App extends React.Component {
                         <List items={this.state.list} />
           </section>
           <hr />
-          <section className="section">
-            <form className="form" id="addItemForm">
-              <input
-                type="text"
-                className="input"
-                id="addInput"
-                placeholder="Something that needs ot be done..."
-              />
-            </form>
-          </section>
         </div>
       </div>
     );
