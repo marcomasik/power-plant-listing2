@@ -15,11 +15,6 @@ class List extends React.Component {
     });
   }
 
-    componentDidMount() {
-        
-      }
-
-
   componentWillReceiveProps(nextProps) {
     this.setState({
       filtered: nextProps.items
@@ -27,10 +22,9 @@ class List extends React.Component {
   }
     
     handleChange(e) {
-        // Variable to hold the original version of the list
+        
     let currentList = [];
-
-        // Variable to hold the filtered list before putting into state
+        
     let newList = [];
         
         // If the search bar isn't empty
@@ -48,8 +42,7 @@ class List extends React.Component {
         const filter = e.target.value.toLowerCase();
 
                 // check to see if the current list item includes the search term
-                // If it does, it will be added to newList. Using lowercase eliminates
-                // issues with capitalization in search terms and search content
+                // If it does, it will be added to newList.
         return lc.includes(filter);
       });
     } else {

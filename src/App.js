@@ -20,16 +20,11 @@ class App extends React.Component {
         .catch(console.log)
       }
 
-
   render() {
     return (
-      <div className="content">
-        <div className="container">
-          <section className="section">
-                        <List items={this.state.list} />
-          </section>
-          <hr />
-        </div>
+      <div className="container">
+          <List items={this.state.list} />
+        <hr />
       </div>
     );
   }
